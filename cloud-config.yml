@@ -1,0 +1,14 @@
+#cloud-config
+
+rancher:
+  network:
+    interfaces:
+	  eth*:
+	    dhcp: true
+	  dns:
+	    nameservers:
+		  - 8.8.8.8
+		  - 8.8.4.4
+hostname: spacemonkey
+ssh_authorized_keys:
+ - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDC05g41pQqLINH6rqzOXj37mMH4oi1RvLTB5JW4ZxyTuC0AIPGk79vZq/OZ2JC0Vf7ESMf1zpIST8lDbb9cYbHjhXNUkGlzyqQp99B5s6B9SLkla0t5UYONqg/4LIiiqbPh4SUNG5YXc7sEd1eM6dlSO2Dsj0AyTtrNdCxYVcQDMufCPayzfK0z+7Zan0/zSfJK1Zd21kVvuYRJ/yq3Cb4paN9451EUkrVpbiXEipsSah6jOGNh8EfMNdI6trhzlDVTA3Eq7o8++VFWsemg0Kxj6WLdTc8zS2oyuG/Keiz/mQ6ZpuaX7kIm7bzyFoFuSTsYAWRGI/CWQkJTq/6GiURobdFGfT55A18UkjpxZmWhSs+Px9fRtJEEDKj0i+wImmzUGffUl+Fu89WGrzPuHUbGrdnkWxgfdEhn7eTuczVmSV4iCptNPFMBICHsiApEqtcWTnNhr71CpKwp86dSgokYiHMXlYLM+NUIxPPveh2VZiMYbIigu2lJg1HGwe7NZjt/PRrnEFv4PZ7XA2mtLqR3caluONfNK7y3DzsRk3+SCTZvG6/Yo3OJCCxB8iy/hGJ6eT5Es5voa0+8Z+eWna6DzHsZei3uxGQPl+BT+WTNccOKULsbW6Q/Vr9LlwD+Qst+P6GZzTLYp1qdcaBwmUAOyPwSyQYLXBn65wTf8JocQ== faddat@gmail.com
